@@ -1,0 +1,81 @@
+body {
+    position: relative;
+    /* background-color: whitesmoke; */
+    box-sizing: border-box;
+}
+
+.calculator{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.calcButtons {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgba(9, 243, 28, 0.432);
+    padding: 10px;
+
+}
+
+.userInput {
+    position: relative;
+    background-color: azure;
+    grid-column: 1/5;
+    margin-bottom: 10px;
+    height: 0.1em;
+    padding: 2em;
+    overflow-x: scroll;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.userEntry{
+    position: absolute;
+    text-align: right;
+    right: 0;
+}
+
+.finalCalc{
+    position: absolute;
+    text-align: right;
+    top: 0;
+    right: 0;
+}
+
+button {
+    background-color: whitesmoke;
+    border-style: none;
+    box-shadow: 0 0 0px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+button:hover{
+    /* background-color: rgba(150, 150, 150, 0.822); */
+    transition: ease 0.5s;
+    box-shadow: 0 0 10px whitesmoke;
+}
+
+.operator {
+    background: #e4f35e;
+}
+
+.samaDengan{
+    background: #f7d258;
+    grid-column: 2/5;
+}
+
+.ac{
+    background: rgba(252, 39, 39, 0.781);
+}
+
+.del{
+    background: #f8b230;
+}
+
